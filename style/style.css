@@ -6,6 +6,8 @@ body{
     height: 100vh;
 }
 
+
+/* .scroll */
 .scroll{
     position: fixed;
     width: 24px;
@@ -33,6 +35,24 @@ body{
     opacity: 1;
 }
 
+
+/* .chat */
+.chat{
+    position: fixed;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--font-color);
+    bottom: 80px;
+    right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 50%);
+}
+
+
+/* navbar */
 nav{
     display: flex;
     justify-content: space-between;
@@ -77,6 +97,7 @@ nav ul li a{
     font-style: b;
 }
 
+/* section - model3 */
 #model3{
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop);
     background-size: 100%;
@@ -142,7 +163,7 @@ header h1{
     font-size: 12px;
 }
 
-.details__item button{
+.order-now-btn{
     width: 204px;
     height: 40px;
     margin: 0px 8px;
@@ -153,6 +174,7 @@ header h1{
     border: 2px solid var(--button);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 2px inset;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .arrow{
@@ -162,3 +184,66 @@ header h1{
     width: 50px;
     height: 50px;
 }
+
+
+/* section 2 - safety */
+#safety{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.hero-img img{
+    max-width: 1096px;
+}
+
+.safety-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.safety-side__text{
+    display: inline-block;
+    max-width: 410px;
+}
+
+#btn-on-white{
+    color: var(--safety);
+    border-color: var(--safety);
+}
+
+.safety-side__buttons{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.learn-more{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learn-more__btn{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 2px solid var(--safety);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more a{
+    color: var(--safety)
+}
+
+/* section 3 - performanc */
