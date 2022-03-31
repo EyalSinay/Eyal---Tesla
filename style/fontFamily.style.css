@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "gothamSSm";
+    src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Light_Web.woff2)
+      format("woff2");
+    font-weight: "light";
+}
+
+:root{
+    --gothamSSm: "gothamSSm";
+}
