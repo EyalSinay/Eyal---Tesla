@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--gothamSSm), Arial, Helvetica, sans-serif;
 }
@@ -100,7 +104,9 @@ nav ul li a{
 /* section - model3 */
 #model3{
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     color: var(--font-color);
 }
 
@@ -144,6 +150,7 @@ header h1{
     animation-name: accelerator;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes accelerator {
@@ -155,12 +162,14 @@ header h1{
     padding: 0;
     margin: 0;
     font-size: 28px;
+    text-align: center;
 }
 
 .details__item__bottom{
     padding: 8px 0;
     margin: 0;
     font-size: 12px;
+    text-align: center;
 }
 
 .order-now-btn{
@@ -221,6 +230,7 @@ header h1{
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: row-reverse;
+    margin-bottom: 48px;
 }
 
 .learn-more{
@@ -247,3 +257,39 @@ header h1{
 }
 
 /* section 3 - performanc */
+.performanc__img{
+    width: 100%;
+    height: 494px;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#performanc__details{
+    padding-top: 340px;
+    margin: 0;
+    color: var(--font-color);
+    width: 864px;
+}
+
+#performanc__details .details__item{
+    width: 272px;
+}
+
+.performanc__bottom{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.performanc__bottom__h{
+    width: 390px;
+    padding-right: 60px;
+}
+
+.performanc__bottom__p{
+    max-width: 668px;
+}
