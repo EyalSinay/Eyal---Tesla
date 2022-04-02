@@ -14,7 +14,7 @@ body{
 /* scroll */
 .scroll{
     position: fixed;
-    width: 24px;
+    max-width: 24px;
     height: 261px;
     top: calc(50% - 130.5px);
     left: 0;
@@ -25,7 +25,7 @@ body{
 }
 
 .scroll__items{
-    width: 1px;
+    max-width: 1px;
     height: 24px;
     margin: 0 24px;
     background-color: var(--scroll-color);
@@ -33,7 +33,7 @@ body{
 }
 
 #item1{
-    width: 3px;
+    max-width: 3px;
     height: 24px;
     background-color: var(--scroll-color);
     opacity: 1;
@@ -80,7 +80,7 @@ nav{
 }
 
 .logo a img{
-    width: 120px;
+    max-width: 120px;
     height: 24px;
     padding: 0 16px;
 }
@@ -112,7 +112,7 @@ nav ul li a:hover{
 #model3{
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     color: var(--font-color);
 }
@@ -126,7 +126,7 @@ header h1{
 }
 
 .details{
-    width: 764px;
+    max-width: 764px;
     height: 54px;
     display: flex;
     justify-content: space-between;
@@ -205,7 +205,7 @@ header h1{
     position: absolute;
     left: 48%;
     top: 93%;
-    width: 50px;
+    max-width: 50px;
     height: 50px;
     animation-name: arrow;
     animation-duration: 1s;
@@ -233,14 +233,12 @@ header h1{
 }
 
 .hero-img{
-    width: 1096px;
+    flex-grow: 2;
+    max-width: 1096px;
     height: 100vh;
-}
-
-.hero-img{
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
 }
 
@@ -309,7 +307,7 @@ header h1{
     height: 494px;
     background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
 }
 
@@ -317,11 +315,11 @@ header h1{
     padding-top: 340px;
     margin: 0 auto;
     color: var(--font-color);
-    width: 864px;
+    max-width: 864px;
 }
 
 #performanc__details .details__item{
-    width: 272px;
+    max-width: 272px;
 }
 
 .performanc__bottom{
@@ -329,11 +327,11 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .performanc__bottom__h{
-    width: 390px;
+    max-width: 390px;
     padding-right: 60px;
 }
 
@@ -342,7 +340,9 @@ header h1{
 }
 
 
+/* ------------- */
 /* responsive-1 */
+/* ------------- */
 @media all and (max-width: 1200px){
 
     /* responsive-1__section1 - model3 */
@@ -351,13 +351,49 @@ header h1{
     }
 
     #menu{
+        width: 80px;
         background-color: rgba(255, 255, 255, 0.5);
         margin: 0px 8px;
         padding: 4px 8px;
         border-radius: 12px;
     }
 
+    .logo{
+        margin: 8;
+        padding: 0;
+    }
 
+    .logo a img{
+        padding: 0 8px;
+        margin: 0;
+    }
+
+    .details{
+        max-width: 764px;
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 415px;
+    }
+
+    .details__item{
+        padding: 0 15px;
+    }
+
+    #detail-speedometer{
+        padding-left: 0;
+    }
+
+    #adw{
+        padding-right: 0;
+    }
+
+    .details__item__top{
+        font-size: 16px;
+    }
 
 
     /* responsive-1__section 2 - safety */
@@ -365,10 +401,16 @@ header h1{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        justify-content: center;
     }
 
+    .hero-img{
+        width: 100%;
+    }
 
+    /* responsive-1__section 2 - performanc */
+    .performanc__bottom__h{
 
+        padding-right: 0px;
+    }
 }
